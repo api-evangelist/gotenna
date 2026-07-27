@@ -1,9 +1,28 @@
 aid: gotenna
 name: GoTenna
-description: GoTenna is a company surfaced as a portfolio company of a16z, bloomberg-beta, union-square-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  goTenna is a mobile mesh networking company that builds off-grid, long-range
+  communication hardware and software. Its consumer goTenna Mesh and professional
+  goTenna Pro devices pair with smartphones over Bluetooth to relay text messages,
+  GPS locations, and data across a decentralized VHF/UHF radio mesh with no cell
+  towers, wifi, or satellite dependency. The Aspen Grove mesh protocol stack and
+  the Radio SDK (RSDK) let third-party developers embed goTenna radio connectivity
+  into Android, iOS, and Linux JVM applications for public safety, defense, and
+  outdoor use. goTenna exposes no public REST/web API; developer integration is via
+  the native RSDK, which requires an SDK app token obtained from goTenna.
 url: https://raw.githubusercontent.com/api-evangelist/gotenna/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/6423942?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -14,9 +33,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Mesh Networking
+- Off-Grid Communication
+- Radio
+- SDK
+- Public Safety
+- Defense
+- Mobile SDK
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +52,29 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://gotenna.com/
+  url: https://gotenna.com/
+- type: DeveloperPortal
+  url: https://gotennapro.com/pages/partners-and-integrations
+- type: Documentation
+  url: https://github.com/gotenna/rsdk-samples
+- type: APIReference
+  url: https://github.com/gotenna/rsdk-samples#radiomodel-api-reference
+- type: GitHubOrganization
+  url: https://github.com/goTenna
+- type: Support
+  url: https://gotennapro.com/pages/contact-us
+- type: PrivacyPolicy
+  url: https://gotenna.com/pages/privacy-policy
+- type: Packages
+  url: packages/gotenna-packages.yml
+- type: SDKs
+  url: packages/gotenna-packages.yml
+- type: LLMsTxt
+  url: llms/gotenna-llms.txt
+- type: DomainSecurity
+  url: security/gotenna-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

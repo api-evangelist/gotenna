@@ -1,0 +1,45 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/gotenna/rsdk-samples
+notes: >-
+  goTenna ships a first-party Radio SDK (RSDK) for radio connection management
+  across Android, iOS, and Linux JVM. The SDK is not a web/REST API; it is a
+  native binary distributed from goTenna's Artifactory (gotenna.jfrog.io) and,
+  for iOS, as a Swift Package. Access requires an SDK app token obtained from
+  goTenna (see https://gotennapro.com/pages/contact-us). Current version 3.4.22.
+packages:
+  - language: kotlin
+    platform: android
+    registry: maven-artifactory
+    name: com.gotenna.sdk:radio-sdk-external-android
+    version: 3.4.22
+    url: https://gotenna.jfrog.io/artifactory/android-libs-release-local
+    install: 'implementation("com.gotenna.sdk:radio-sdk-external-android:3.4.22")'
+    official: true
+    notes: Requires Artifactory credentials tied to an SDK app token.
+  - language: swift
+    platform: ios
+    registry: swift-package-manager
+    name: RSDK
+    version: 3.4.22
+    url: https://github.com/gotenna/gotenna-rsdk-spm
+    install: 'https://github.com/gotenna/gotenna-rsdk-spm (binaryTarget RSDK 3.4.22)'
+    official: true
+    notes: Swift Package wrapping the radio-sdk-external-ios binary from gotenna.jfrog.io.
+  - language: java
+    platform: jvm
+    registry: maven-artifactory
+    name: com.gotenna.sdk:radio-sdk-external-jvm
+    version: 3.4.22
+    url: https://gotenna.jfrog.io/artifactory/android-libs-release-local
+    install: 'implementation("com.gotenna.sdk:radio-sdk-external-jvm:3.4.22")'
+    official: true
+    notes: Linux/desktop JVM build of the Radio SDK.
+  - language: kotlin
+    platform: samples
+    registry: github
+    name: gotenna/rsdk-samples
+    url: https://github.com/gotenna/rsdk-samples
+    install: git clone https://github.com/gotenna/rsdk-samples
+    official: true
+    notes: Official Android/iOS/Linux-JVM sample apps and RSDK integration docs (source, not a published library).
